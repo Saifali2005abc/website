@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WhyBento</title>
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <style>
+        .x{
+            background-color: rgb(255, 248, 238);
+             width: 100%;
+  
+        }
+        body{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: "Plus Jakarta Sans", sans-serif;
+        }
+        .logo{
+            text-decoration: none;
+            color: black;
+            font-size: 25px;
+       }
+        .x1{
+            border: none;
+            background-color: transparent;
+            font-weight: 600;
+        }
+        .x2{
+            text-decoration: none;
+            color: black;
+            font-weight: 600;
+            font-size: 15px;
+        }
+        .x2:hover{
+            border-bottom: 2px;
+            color: black;
+        }
+        .btn{
+          background-color: rgb(46, 169, 136);
+            border: none;
+            border-radius: 50px;
+            padding: 7px 10px 7px 10px;
+            color: white;
+            font-weight: 500;
+        }
+        .under1{
+          font-size: 14px;
+          cursor: pointer;
+          position: relative;
+          font-weight: 600;
+        }
+        .under1::after{
+          content: '';
+          position: absolute;
+          width: 100%;
+          height: 0.175rem;
+          background:#f15541;
+          left: 0;
+          bottom: 0;
+          transform: scale(0,1);
+          transition: transform 0.3s ease;
+        }
+        
+        .under1:hover::after{
+          transform: scale(1,1);
+        }
+        .btn-get:hover{
+          color: rgb(46, 169, 136) ;
+          background-color: rgb(255, 248, 238);
+          transition-duration: 0.2s;
+        }
+        .img1{
+  
+            border-top-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+        }
+        
+        .img2{
+            background-size: cover;
+            overflow: hidden;
+            width: 80%;
+            border-top-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+        }
+        .img2:hover{
+            opacity: 0.7;
+        }
+       
+        .btns{
+            text-decoration: none;
+            outline: none;
+            padding: 10px;
+            color: rgb(88, 81, 81);
+        background-color: rgb(241, 238, 234);
+         border-radius: 30px; 
+         font-size: 14px;
+         font-weight: 700;
+          border: none;
+        }
+         
+        .btns:hover{
+          background-color: black;
+          color: white;
+        } 
+
+
+        
+        .x4{
+          background-color: black;
+          color: white;
+          border-radius: 40px;
+          border: none;
+          font-weight: 600;
+          padding: 14px 17px 14px 17px;
+          font-size:18px ;
+        }
+        .x4:hover{
+          background-color: rgb(47, 45, 45);
+          color: white;
+        }
+        .bimg{
+          background-image: url(image/2image6.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-attachment: fixed;
+        }
+        .btn-1{
+          background-color: rgb(49, 47, 47);
+          color: white;
+          border: none;
+          border-radius: 30px;
+          padding: 10px;
+          font-weight: 600;
+        }
+        .btn-1:hover{
+          background-color: black;
+        }
+    </style>
+</head>
+<body>
+  <div class="container-fluid x">
+    <nav class="navbar navbar-expand-lg navbar-light navigation" style=" background-color: rgb(255, 248, 238);">
+        <div class="container-fluid">
+          <a class="navbar-brand logo ms-2" href="index.html"><img src="image/logo.svg" alt="" class="w-75"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  mb-2 mb-lg-0 ">
+              <li class="nav-item ">
+                <a class="nav-link active  x2 under1" aria-current="page" href="#">Why Bento</b></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active ms-lg-2 x2 under1" aria-current="page" href="pricing.html">Pricing</b></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle ms-lg-3 me-lg-3 x2 " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Resturant type
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="resturant_typre.html">Multi_location Resturant</a></li>
+                  <li><a class="dropdown-item" href="bars.html">Bars</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Private Chefs</a></li>
+                </ul>
+              </li>
+            </ul>
+            
+            <a href="phone.html" ><button class="x1 ms-lg-5 ms-0 under1">+92 327 2000 339</button></a>
+            <a href="login.html" ><button class="x1 ms-lg-3 ms-0 under1">Sign In</button></a>
+            <a href=""><button class="btn ms-lg-3 ms-0 btn-get " type="submit">Get Started</button></a>
+            
+          </div>
+        </div>
+      </nav>
+    </div>
+
+
+
+        <!-- section 2   -->
+        <div class="container-fluid sec-2 "  style=" background-color: rgb(255, 248, 238);">
+            <div class="row">
+                <div class="col-12 col-lg-5 pt-lg-5 mt-md-5">
+                    <p style="color: black; font-weight: 900; line-height: 46px;" class="fs-1 mt-5 ps-3 pe-5 pb-0"><b>Fully at your service</b></p>
+                    <p style="letter-spacing: 0.5px; font-weight: 500; font-size: 15px;" class=" ps-3 pe-lg-5 pt-3 pb-0">Through websites, online ordering, marketing tools, POS, and payment systems, The BentoBox Marketing & Commerce Platform helps restaurants around the world create the best hospitality experiences possible.</p>
+                </div>
+                <div class="col-12 col-lg-7 d-flex justify-content-center  pt-5 pb-4" style="background-image: url(image/1.png); background-size: cover;">
+                    <img src="image/2image1.webp" alt="Not found image" class="  w-50 img1 image-fluid">
+                </div>
+            </div>
+          </div>
+
+          <!-- section 3  -->
+          <div class="container-fluid mt-5">
+            <div class="row mt-5 justify-content-center ">
+                <div class="col-12 mt-5 text-center">
+                 <p style="font-weight: 900; line-height: 0px;" class="fs-1">Power to the industry people.</p>
+                </div>  
+               
+                <div class="col-12 col-lg-8 p-3 text-lg-center">
+                <p style="color: rgb(88, 81, 81); font-weight: 600; font-size: 18px;" class="ps-2">It’s your hospitality experience. We say – own it. BentoBox’s digital platform gives restaurant owners and operators direct control of the tools they need to drive more success.</p>
+            </div>
+           </div>
+          </div>
+        
+
+          <!-- section 4  -->
+
+          <div class="container-fluid mt-5">
+            <div class="row mt-5  ">
+                <div class="col-12 d-flex justify-content-center ">
+                    <iframe title="vimeo-player" src="https://player.vimeo.com/video/925051717?h=8e48ba77d5" width="" height="460" frameborder="0" class="w-100"   allowfullscreen></iframe>
+                </div>
+            </div>
+         </div>
+
+
+
+         <!-- section 5  -->
+
+         <div class="container-fluid  mt-0 mt-md-3 mt-lg-5">
+            <div class="row">
+                <div class="col-12 col-lg-6 pt-lg-3 mt-lg-5">
+                    <p style="color: rgb(88, 81, 81); font-weight: 500;" class="ps-3 fs-4 ">Stand Out</p>
+                    <p style="color: black; font-weight: 900; line-height: 26px;" class="fs-1 ps-3 pe-5 "><b>Make an impact</b></p>
+                    <p style="letter-spacing: 0.5px; font-weight: 600; font-size: 16px;line-height: 23px; margin-top: -10px; color: rgb(88, 81, 81);" class=" ps-3 pt-3 "> BentoBox’s expert design team helps restaurants come to life online through customized websites which, thanks to built-in SEO, rank higher in search results.</p>
+
+                    <div class="row ps-3 mt-4 mt-md-3 mt-lg-5">
+                      <div class="col-auto"><a href="#"><button class="p-2 mt-1 btns">Resturant Websites</button></a></div>
+                      <div class="col-auto"><a href="#"><button class="p-2 mt-1  btns">Digital Accessibility</button></a></div>
+                      <div class="col-auto"><a href="#"><button class="p-2 mt-1  btns">Google Sync</button></a></div>
+                      <div class="col-auto"><a href="#"><button class="p-2 mt-1 btns">Customization Package</button></a></div>
+                       
+                       
+                    
+                    </div>
+                    
+                </div>
+                <div class="col-12 col-lg-6  d-flex justify-content-center">
+                    <img src="image/2image2.webp" alt="Not found image" class=" mt-5 w-100 image-fluid">
+                </div>
+            </div>
+          </div>
+
+
+          <!-- section 6  -->
+
+          <div class="container-fluid mt-2 mt-md-3 mt-lg-5">
+            <div class="row">
+            <div class="col-12 col-lg-6  d-flex justify-content-center">
+              <img src="image/2image3.webp" alt="Not found image" class=" mt-5 image-fluid" style="width: 90%;">
+          </div>
+            <div class="col-12 col-lg-6 pt-lg-3 mt-lg-5 ">
+              <p style="color: rgb(88, 81, 81); font-weight: 500;" class="ps-3 fs-4 mt-5 mt-lg-0">SELL</p>
+              <p style="color: black; font-weight: 900; line-height: 26px;" class="fs-1 ps-3 pe-5 "><b>Bring in More Money</b></p>
+              <p style="letter-spacing: 0.5px; font-weight: 600; font-size: 16px;line-height: 23px; margin-top: -10px; color: rgb(88, 81, 81);" class=" ps-3 pt-3 ">An online storefront is always open for business. Create new streams of revenue by doing sales directly through your website, without the third-party fees.</p>
+
+              <div class="row  mt-5 pt-4 justify-content-start p-0 m-0">
+                      <div class="col-auto"><a href="#"><button class="p-2 mt-1 btns">Online Ordering</button></a></div>
+                      <div class="col-auto"><a href="#"><button class="p-2 mt-1  btns">Dine-in-ordering</button></a></div>
+                      <div class="col-auto"><a href="#"><button class="p-2 mt-1  btns">Kioks</button></a></div>
+                      <div class="col-auto"><a href="#"><button class="p-2 mt-1 btns">QR Code Order & Pay</button></a></div>
+                      <div class="col-auto"><a href="#"><button class="p-2 mt-1 btns">Gift Cards</button></a></div>
+                      <div class="col-auto"><a href="#"><button class="p-2 mt-1 btns">Event</button></a></div>
+                      <div class="col-auto"><a href="#"><button class="p-2 mt-1 btns">E-Commercer</button></a></div>
+              </div>
+          </div>
+          </div>
+        </div>
+        
+
+        <!-- section  7  -->
+
+        <div class="container-fluid mt-2 mt-md-3 mt-lg-5">
+          <div class="row">
+          
+          <div class="col-12 col-lg-6 pt-lg-3 mt-lg-5 ">
+            <p style="color: rgb(88, 81, 81); font-weight: 500;" class="ps-3 fs-4 mt-5 mt-lg-0">ENGAGE</p>
+            <p style="color: black; font-weight: 900; line-height: 26px;" class="fs-1 ps-3 pe-5 "><b>Build diner relationShip</b></p>
+            <p style="letter-spacing: 0.5px; font-weight: 600; font-size: 16px;line-height: 23px; margin-top: -10px; color: rgb(88, 81, 81);" class=" ps-3 pt-3 ">With BentoBox, you get direct access to diner data. Make the most of it with a range of automated marketing tools built to turn first-time guests into regulars.</p>
+
+            <div class="row ps-3 mt-5 pt-4 justify-content-start">
+                     <div class="col-auto"><a href="#"><button class="p-2 mt-1 btns">Dine In</button></a></div>
+                     <div class="col-auto"><a href="#"><button class="p-2 mt-1  btns">Reservation</button></a></div>
+                     <div class="col-auto"><a href="#"><button class="p-2 mt-1  btns">Marketing</button></a></div>
+                     <div class="col-auto"><a href="#"><button class="p-2 mt-1 btns">Digital Waitlist</button></a></div>
+                     <div class="col-auto"><a href="#"><button class="p-2 mt-1 btns">SEO</button></a></div>
+                     <div class="col-auto"><a href="#"><button class="p-2 mt-1 btns">Email Marketing</button></a></div>
+                     <div class="col-auto"><a href="#"><button class="p-2 mt-1 btns">SMS Marketing</button></a></div>
+            </div>
+        </div>
+        <div class="col-12 col-lg-6  d-flex justify-content-center">
+          <img src="image/2image4.webp" alt="Not found image" class=" mt-5 w-100 image-fluid">
+      </div>
+        </div>
+      </div>
+
+
+      <!-- section 8  -->
+
+      <div class="container-fluid mt-2 mt-md-3 mt-lg-5">
+        <div class="row">
+        <div class="col-12 col-lg-6  d-flex justify-content-center">
+          <img src="image/2image5.webp" alt="Not found image" class=" mt-5 image-fluid" style="width: 80%;">
+      </div>
+        <div class="col-12 col-lg-6 pt-lg-3 mt-lg-5 ">
+          <p style="color: rgb(88, 81, 81); font-weight: 500;" class="ps-3 fs-4 mt-5 mt-lg-0">OPERATE</p>
+          <p style="color: black; font-weight: 900; line-height: 26px;" class="fs-1 ps-3 pe-5 "><b>Stay Efficent</b></p>
+          <p style="letter-spacing: 0.5px; font-weight: 600; font-size: 16px;line-height: 23px; margin-top: -10px; color: rgb(88, 81, 81);" class=" ps-3 pt-3 ">Streamline operations across front- and back-of-house (and connect the restaurant tech you’re already using) for a smoother experience for your team, your diners and your business as a whole.</p>
+
+          <div class="row ps-3 mt-5 pt-4 justify-content-start">
+                   <div class="col-auto"><a href="#"><button class="p-2 mt-1 btns">Bentcore</button></a></div>
+                   <div class="col-auto"><a href="#"><button class="p-2 mt-1  btns">Dinner Database</button></a></div>
+                   <div class="col-auto"><a href="#"><button class="p-2 mt-1  btns">Menu Management</button></a></div>
+                   <div class="col-auto"><a href="#"><button class="p-2 mt-1 btns">Branding</button></a></div>
+                   <div class="col-auto"><a href="#"><button class="p-2 mt-1 btns">Clover Kitchen Display System</button></a></div>
+                   <div class="col-auto"><a href="#"><button class="p-2 mt-1 btns">Ingegration</button></a></div>
+                   <div class="col-auto"><a href="#"><button class="p-2 mt-1 btns">Clover Paymeny Processing</button></a></div>
+          </div>
+      </div>
+      </div>
+    </div>
+
+    <!-- section 9  -->
+    <div class="container-fluid mt-5 bimg" >
+      <div class="row mt-md-5 d-flex justify-content-center"  >
+        <div class="col-9 mt-5">
+          <p class="fs-3 text-light fw-bold mt-5 ">
+            As a food hall, Milepost Zero works with a variety of vendors that each have their own point of sale. Using BentoBox, we've created a central location for online ordering. Guests scan a QR code on their table that takes them to a page on our website, and from there they can order for pick-up at any stall.
+          </p>
+        </div>
+      </div>
+
+      <div class="row justify-content-center mt-5">
+        <div class="col-3"><img src="image/2image7.webp" alt="" class="w-75 image-fluid"></div>
+        <div class="col-5 col-md-2"><p style="font-size: 17px;" class="fw-bold text-light mt-1 mt-md-3">Heather Dratler
+          VP of Marketing and Brand Integrity</p> </div>
+        <div class="col-6 col-lg-3  text-center mt-4"><a href=""><button class="btn-1">Visit Site</button></a>
+        </div>
+      </div>
+
+
+      <div class="row mt-5 justify-content-center">
+        <div class="col-auto"><a href="#"><button class="p-2 mt-1 btns">Resturant Websites</button></a></div>
+                     <div class="col-auto"><a href="#"><button class="p-2 mt-1  btns">Event Management</button></a></div>
+      </div>
+
+      <div class="row  mb-5 pb-5 justify-content-center">
+        <div class="col-auto"><a href="#"><button class="p-2 mt-1 btns">Online Ordering</button></a></div>
+      </div>
+    </div>
+    
+
+    <!-- section 10  -->
+    <div class="container mt-5 " style="background-color: #f15541; border-radius: 40px;">
+      <div class="row mt-5">
+       <div class="col-12 col-lg-8">
+             <div class="row">
+              <div class="col-12">
+                <p class="fs-2 ps-3 text-light pt-4"><b>Interested in learning more about Bentobox ?</b></p>
+              </div>
+              <div class="col-12">
+                <p class="fs-6 ps-3 text-light pb-2" style="font-weight: 500;">See how the Marketing & Commerce Platform can help your restaurant do more.</p>
+              </div>
+             </div>
+       </div>
+       <div class="col-12 col-lg-4 d-flex justify-content-center  align-self-center">
+         <a href=""><button class="btn x4 mb-4 mb-lg-0">Book a Demo</button></a>
+       </div>
+      </div>
+     </div>
+
+     <!-- footer  -->
+     <div class="container-fluid mt-5 pt-5 pb-5" style="background-color: rgb(255, 248, 238);">
+      <div class="row">
+        <div class="col-12 col-md-4 col-lg-3" style="border-right:  1px solid rgb(219, 203, 203); border-bottom: 1px solid rgb(219, 203, 203);">
+        <p class="fs-4 fw-bold  ms-4 ps-2 mt-5 " >Bentbox</p>
+        <ul style="list-style: none; " class="fs-6 ">
+         <a href="" style="text-decoration: none; color: rgb(105, 100, 100); font-weight: 600; line-height: 35px;" class="under"> <li>Life at Bentbox</li></a>
+         <a href="" style="text-decoration: none; color: rgb(164, 157, 157); font-weight: 600; line-height: 35px;" class="under"> <li>Carrers</li></a>
+         <a href="" style="text-decoration: none; color: rgb(105, 100, 100); font-weight: 600; line-height: 35px;" class="under"> <li>Customer Storeis</li></a>
+         <a href="" style="text-decoration: none; color: rgb(105, 100, 100); font-weight: 600; line-height: 35px;" class="under"> <li>Platform Status</li></a>
+         <a href="" style="text-decoration: none; color: rgb(105, 100, 100); font-weight: 600; line-height: 35px;" class="under"> <li>DEI</li></a>
+        </ul>
+        </div>
+        <div class="col-12 col-md-4 col-lg-3" style="border-right:  1px solid  rgb(219, 203, 203);border-bottom: 1px solid rgb(219, 203, 203);">
+          <p class="fs-4 fw-bold ms-4 ps-2 mt-5 " >Contact</p>
+          <ul style="list-style: none; " class="fs-6 ">
+            <a href="" style="text-decoration: none; color: rgb(105, 100, 100); font-weight: 600; line-height: 35px;" class="under"> <li>Sign Up</li></a>
+            <a href="" style="text-decoration: none; color: rgb(105, 100, 100); font-weight: 600; line-height: 35px;" class="under"> <li>Call  Now</li></a>
+            <a href="" style="text-decoration: none; color: rgb(105, 100, 100); font-weight: 600; line-height: 35px;" class="under"> <li>Watch the Demo</li></a>
+            <a href="" style="text-decoration: none; color: rgb(105, 100, 100); font-weight: 600; line-height: 35px;" class="under"> <li>Refer a Resturant</li></a>
+            <a href="" style="text-decoration: none; color: rgb(105, 100, 100); font-weight: 600; line-height: 35px;" class="under"> <li>Become a Partner</li></a>
+            <a href="" style="text-decoration: none; color: rgb(105, 100, 100); font-weight: 600; line-height: 35px;" class="under"> <li>Referals Terms</li></a>
+           </ul>
+        </div>
+        <div class="col-12 col-md-4 col-lg-3" style="border-right:  1px solid  rgb(219, 203, 203); border-bottom: 1px solid rgb(219, 203, 203);">
+          <p class="fs-4 fw-bold ms-4 ps-2 mt-5  " >Support</p>
+          <ul style="list-style: none; " class="fs-6 ">
+            <a href="" style="text-decoration: none; color: rgb(105, 100, 100); font-weight: 600; line-height: 35px;" class="under"> <li>FAQ</li></a>
+            <a href="" style="text-decoration: none; color: rgb(105, 100, 100); font-weight: 600; line-height: 35px;" class="under"> <li>Contact Support</li></a>
+            <a href="" style="text-decoration: none; color: rgb(105, 100, 100); font-weight: 600; line-height: 35px;" class="under"> <li>Help Center</li></a>
+            <a href="" style="text-decoration: none; color: rgb(105, 100, 100); font-weight: 600; line-height: 35px;" class="under"> <li>Privacy Policy</li></a>
+            <a href="" style="text-decoration: none; color: rgb(105, 100, 100); font-weight: 600; line-height: 35px;" class="under"> <li>Term of Services</li></a>
+           </ul>
+        </div>
+        <div class="col-12 col-md-4 col-lg-2">
+          <p class="fs-4 fw-bold ms-4  mt-5  " >Connect</p>
+          <div class="row">
+            <div class="col-12">
+              <a href="" class="fi fs-5 text-dark p-0"><i class="fa-brands fa-facebook-f ps-4 x3"></i></a>
+              <a href="" class="fi fs-5 text-dark p-0"><i class="fa-brands fa-instagram ps-4 x3"></i></a>
+              <a href="" class="fi fs-5 text-dark p-0"><i class="fa-brands fa-twitter ps-4 x3"></i></a>
+              <a href="" class="fi fs-5 text-dark p-0"><i class="fa-brands fa-linkedin ps-4 x3"></i></a>
+            </div>
+            <div class="col-lg-12 col-4 ">
+                   <img src="image/image14.webp" alt="" class="w-100 mt-5 pt-3 ms-4 image-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+     </div>
+
+          <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

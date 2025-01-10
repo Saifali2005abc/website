@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+<style>
+    .btn{
+        background-color: transparent;
+        color: rgb(46 , 169 ,136);
+        border: none;
+        font-weight: bold;
+        
+    }
+    .login-form {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow */
+    }
+
+    .login-form input[type="email"],
+    .login-form input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1); /* Inner box shadow */
+        transition: border-color 0.3s, box-shadow 0.3s;
+    }
+
+    .login-form input[type="email"]:focus,
+    .login-form input[type="password"]:focus {
+        border-color: #007bff;
+        box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 0 8px rgba(0, 123, 255, 0.6); /* Updated box shadow on focus */
+    }
+
+    .login-form input[type="submit"] {
+        width: 100%;
+        background: rgb(0,36,30);
+background: linear-gradient(90deg, rgba(0,36,30,1) 0%, rgba(46,169,136,1) 35%, rgba(0,212,255,1) 100%);
+        color: #fff;
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .login-form input[type="submit"]:hover {
+        background: rgb(0,36,30);
+background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(46,169,136,1) 35%, rgb(9,67,57) 100%);
+transition-duration: 3s;
+       
+    }
+    .forgot-password {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .forgot-password a {
+        color: #000;
+        text-decoration: none;
+    }
+
+    .forgot-password a:hover {
+        text-decoration: underline;
+    }
+</style>
+</head>
+<body>
+     <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-lg-7 d-none d-lg-inline">
+                <div class="row">
+                    <div class="col-12"><img src="image/login_image.png" alt="" class="w-75 ms-5 pt-5 ps-5"></div>
+                    <div class="col-12 text-center">
+                        <p class="fw-bold fs-3"> Diner Feedback with Online Ordering</p>
+                        <p class="px-4" style="font-weight: 600;">Collect private 1-5 star reviews and feedback directly from your diners through automated email and SMS campaigns.</p>
+                        <a href=""><button class="btn">Learn More</button></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-12 col-lg-5 text-center" style="background-color: azure;">
+                <img src="image/logo.svg" alt="" class="w-50 pt-5 mt-5" >
+                   
+
+                 <!-- div for inputs  -->
+               
+                     <div class="login-form  px-5 mx-5 mt-5">
+                        <p class="fs-4 fw-bolder">Log In</p>
+                        <form>
+                            <input type="email" placeholder="Email">
+                            <input type="password" placeholder="Password">
+                            <input type="submit" value="Login">
+                        </form>
+                    </div>
+                    <div class="forgot-password">
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                     
+                
+
+            </div>
+        </div>
+     </div>
+
+     <script src="bootstrap/js/bootstrap.min.js"></script>
+    
+</body>
+</html>

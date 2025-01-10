@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+<style>
+    .x{
+            background-color: rgb(255, 248, 238);
+            width: 100%;
+        }
+        body{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          
+            font-family: "Plus Jakarta Sans", sans-serif;
+        }
+        .x1{
+            border: none;
+            background-color: transparent;
+            font-weight: 600;
+        }
+        .x2{
+            text-decoration: none;
+            color: black;
+            font-weight: 600;
+        }
+        .x2:hover{
+            border-bottom: 2px;
+            color: black;
+        }
+        .under1{
+          cursor: pointer;
+          position: relative;
+        }
+        .under1::after{
+          content: '';
+          position: absolute;
+          width: 100%;
+          height: 0.175rem;
+          background:#f15541;
+          left: 0;
+          bottom: 0;
+          transform: scale(0,1);
+          transition: transform 0.3s ease;
+        }
+        .under1:hover::after{
+          transform: scale(1,1);
+        }
+        .btn:hover{
+          color: rgb(46, 169, 136) ;
+          background-color: rgb(255, 248, 238);
+          transition-duration: 0.2s;
+        }
+        .btn{
+            background-color: rgb(46, 169, 136);
+            border: none;
+            border-radius: 50px;
+            padding: 7px 10px 7px 10px;
+            color: white;
+            font-weight: 500;
+        }
+        .shadow{
+            box-shadow:
+            0.5px 0.5px 0.6px -17px rgba(0, 0, 0, 0.07),
+            1px 1px 1.4px -17px rgba(0, 0, 0, 0.102),
+            1.7px 1.7px 2.3px -17px rgba(0, 0, 0, 0.126),
+            2.6px 2.6px 3.5px -17px rgba(0, 0, 0, 0.146),
+            3.8px 3.8px 5px -17px rgba(0, 0, 0, 0.165),
+            5.3px 5.3px 7.1px -17px rgba(0, 0, 0, 0.184),
+            7.5px 7.5px 10.1px -17px rgba(0, 0, 0, 0.204),
+            11px 11px 14.6px -17px rgba(0, 0, 0, 0.228),
+            16.9px 16.9px 22.5px -17px rgba(0, 0, 0, 0.26),
+            30px 30px 40px -17px rgba(0, 0, 0, 0.33);
+        }
+        .p2{
+              margin-top: -22px;
+        } 
+        .p1{
+            margin-top: -10px;
+        }
+        .colu:hover{
+            background-color:rgb(227, 224, 219);
+        }
+        .btnn{
+        background-color: transparent;
+        color: rgb(46 , 169 ,136);
+        border: none;
+        font-weight: bold;
+        
+    }
+    
+    .btn-1{
+        float: right;
+        background-color: transparent;
+        color: black;
+        border: none;
+        font-weight: bold;
+        
+    }
+    .btnn{
+          cursor: pointer;
+          position: relative;
+        }
+        .btnn:hover{
+            background-color: transparent;
+        }
+        .btnn::after{
+          content: '';
+          position: absolute;
+          width: 100%;
+          height: 0.0175rem;
+          background: rgb(46 , 169 ,136);
+          left: 0;
+          bottom: 0;
+          transform: scale(0,1);
+          transition: transform 0.3s ease;
+        }
+        .btnn:hover::after{
+          transform: scale(1,1);
+          
+        }
+
+        .btn-1{
+          cursor: pointer;
+          position: relative;
+        }
+        
+        .btn-1::after{
+          content: '';
+          position: absolute;
+          width: 100%;
+          height: 0.0175rem;
+          background: black;
+          left: 0;
+          bottom: 0;
+          transform: scale(0,1);
+          transition: transform 0.3s ease;
+        }
+        .btn-1:hover::after{
+          transform: scale(1,1);
+        
+        }
+        .border{
+            border-radius: 30px;
+            background-color: white;
+        }
+</style>
+</head>
+<body>
+    <div class="container-fluid x">
+        <nav class="navbar navbar-expand-lg navbar-light navigation" style=" background-color: rgb(255, 248, 238);">
+            <div class="container-fluid">
+              <a class="navbar-brand  ms-2" href="index.html"><img src="image/logo.svg" alt="" class="w-75"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-lg-1 mb-2 mb-lg-0 ">
+                  <li class="nav-item ms-lg-1">
+                    <a class="nav-link active  x2 under1" aria-current="page" href="whybento.html">Why Bento</b></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active ms-lg-3 x2 under1" aria-current="page" href="pricing.html">Pricing</b></a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link active dropdown-toggle ms-lg-3 me-lg-3 x2 " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Resturant type
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="resturant_typre.html">Multi_location Resturant</a></li>
+                      <li><a class="dropdown-item" href="bars.html">Bars</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Private Chefs</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                
+                <a href="phone.html" ><button class="x1 ms-lg-5 ms-0 under1">+92 327 2000 339</button></a>
+                <a href="login.html" ><button class="x1 ms-lg-3 under1">Sign In</button></a>
+                <a href=""><button class="btn ms-lg-3  " type="submit">Get Started</button></a>
+                
+              </div>
+            </div>
+          </nav>
+        </div>
+
+
+        <!-- section 2  -->
+
+        <div class="container-fluid pt-5" style="background-color: rgb(255, 248, 238);">
+            <div class="row d-flex justify-content-center mt-5">
+                <div class="col-12">
+                    <p class="fs-1 text-center fw-bolder">PRICING</p>
+                </div>
+                <div class="col-12 col-md-8  text-md-center">
+                    <p class="fs-6  " style="color: rgb(71, 68, 68); font-weight: 500;">No contracts, no hidden fees. Just plans built to work for real restaurant needs. We’re here to talk about your restaurant anytime – just call 877-353-2447.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- section 3  -->
+
+        <div class="container-fluid pt-5 "   style="background-color: rgb(255, 248, 238);">
+            <div class="row mt-5 d-flex justify-content-around"  >
+                <div class="col-12 col-lg-6  shadow border">
+                       <p class="fs-4 fw-bold text-center pt-5">Build Your Own</p>
+                       <div class="d-flex justify-content-center  align-self-center">
+                       <a href=""><button class="btn mt-2 ms-lg-3 justify-content-center" type="submit">Get Started</button></a></div>
+                       <p class="fs-5 ps-md-3 text-start" style="font-weight: 600;">BentoCore <span class="fs-5 pe-md-3" style="float: right; font-weight: 600;">Included</span></p>
+                       <p style="font-size: 14px; " class="fw-bold ps-1 ps-md-5">Includes: Diner Database, Menu Management, Brand</p>
+                       <p style="font-size: 14px;" class="fw-bold p2 ps-1  ps-md-5"   >Center, Ready-to-Go Email & SMS Marketing</p>
+
+                       <div class="row mx-md-1 pt-3 "  >
+                        <div class="col-12 "  style="border-top: 1px solid rgb(133, 128, 128);">
+                            <p class="fs-5  text-start mt-3" style="font-weight: 600;">Modules <span  style="float: right; font-weight: 600; font-size: 12px;" class="mt-3">Per Month</span></p>
+                        </div>
+
+                        <div class="col-12 colu" style="border-top: 1px solid rgb(133, 128, 128);">
+                            <p class="text-start ps-md-5 mt-3" style="font-weight: bold; font-size: 14px; ">Resturant Websites <span  style="float: right; font-weight: bold; font-size: 14px;">$99*</span></p>
+                        </div>
+
+                        <div class="col-12 colu" style="border-top: 1px solid rgb(133, 128, 128);">
+                            <p class="text-start ps-md-5 mt-3" style="font-weight: bold; font-size: 14px; ">Takeout & Delivery<span  style="float: right; font-weight: bold; font-size: 14px;">$49*</span></p>
+                        </div>
+
+                        <div class="col-12 colu" style="border-top: 1px solid rgb(133, 128, 128);">
+                            <p class="text-start ps-md-5 mt-3" style="font-weight: bold; font-size: 14px; ">Online Catering<span  style="float: right; font-weight: bold; font-size: 14px;">$79*</span></p>
+                        </div>
+
+                        <div class="col-12 colu" style="border-top: 1px solid rgb(133, 128, 128);">
+                            <p class="text-start ps-md-5 mt-3" style="font-weight: bold; font-size: 14px; ">QR code order & pay<span  style="float: right; font-weight: bold; font-size: 14px;">$19*</span></p>
+                        </div>
+
+                        <div class="col-12 colu" style="border-top: 1px solid rgb(133, 128, 128);">
+                            <p class="text-start ps-md-5 mt-3" style="font-weight: bold; font-size: 14px; ">E-commerce Stores<span  style="float: right; font-weight: bold; font-size: 14px;">$19*</span></p>
+                        </div>
+
+                        <div class="col-12 colu" style="border-top: 1px solid rgb(133, 128, 128);">
+                            <p class="text-start ps-md-5 mt-3" style="font-weight: bold; font-size: 14px; ">Gift Cards<span  style="float: right; font-weight: bold; font-size: 14px;">$19*</span></p>
+                        </div>
+
+                        <div class="col-12 colu" style="border-top: 1px solid rgb(133, 128, 128);">
+                            <p class="text-start ps-md-5 mt-3" style="font-weight: bold; font-size: 14px; ">Reservation <span  style="float: right; font-weight: bold; font-size: 14px;">$199*</span></p>
+                        </div>
+
+                        <div class="col-12 colu" style="border-top: 1px solid rgb(133, 128, 128);">
+                            <p class="text-start ps-md-5 mt-3" style="font-weight: bold; font-size: 14px; ">Digital Waitlist<span  style="float: right; font-weight: bold; font-size: 14px;">$99*</span></p>
+                        </div>
+
+                        <div class="col-12 colu" style="border-top: 1px solid rgb(133, 128, 128);">
+                            <p class="text-start ps-md-5 mt-3" style="font-weight: bold; font-size: 14px; ">Event Management<span  style="float: right; font-weight: bold; font-size: 14px;">$149*</span></p>
+                        </div>
+
+                        <div class="col-12 " style="border-top: 1px solid rgb(133, 128, 128);">
+                            <a href=""><button class="btnn mt-3 mb-5">Learn More</button></a>
+                            <a href=""><button class="btn-1 mt-3 mb-5">Contact Us</button></a>
+                        </div>
+
+                       </div>
+                </div>
+
+                <!-- // next div  -->
+                <div class="col-12 col-lg-4">
+                   <p class="fs-4 pt-5" style="font-weight: 600;">Popular Add-ons</p>
+                   <div class="col-12 " >
+                    <p class="text-start mt-3" style="font-weight: bold; font-size: 14px; ">Customization Packages <span  style="float: right; font-weight: bold; font-size: 14px;">$99*</span></p>
+                   </div>
+                   <p style="font-size: 12px; " class="fw-bold  ps-1 ps-md-5">Includes: Custom page templates, forms, alerts,</p>
+                       <p style="font-size: 12px;" class="fw-bold p1 ps-1  ps-md-5"   >segments, email & SMS campaigns (up to 500 sends</p>
+                       <p style="font-size: 12px;" class="fw-bold p1 ps-1  ps-md-5"   >each), and fully designed diner-facing modules   </p>
+
+                       <div class="col-12 colu" style="border-top: 1px solid rgb(133, 128, 128);">
+                        <p class="text-start ps-md-5 mt-3" style="font-weight: bold; font-size: 14px; ">ADA Essientialss<span  style="float: right; font-weight: bold; font-size: 14px;">$49</span></p>
+                    </div>
+
+                    <div class="col-12 colu" style="border-top: 1px solid rgb(133, 128, 128);">
+                        <p class="text-start ps-md-5 mt-3" style="font-weight: bold; font-size: 14px; ">ADA Plus + Cookie Consent<span  style="float: right; font-weight: bold; font-size: 14px;">$119*</span></p>
+                    </div>
+
+                    <div class="col-12 colu" style="border-top: 1px solid rgb(133, 128, 128);">
+                        <p class="text-start ps-md-5 mt-3" style="font-weight: bold; font-size: 14px; ">Google Profile Sync<span  style="float: right; font-weight: bold; font-size: 14px;">$29*</span></p>
+                    </div>
+
+                    <div class="d-flex justify-content-center  align-self-center">
+                      <a href=""><button class="btn mt-2 ms-lg-3 justify-content-center" type="submit">Get Started</button></a></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- section 4  -->
+
+        <div class="container-fluid pt-5"  style="background-color: rgb(255, 248, 238);">
+          <div class="row d-flex justify-content-center mt-5">
+              <div class="col-12">
+                  <p class="fs-1 text-center fw-bolder">Popular Packages</p>
+              </div>
+              <div class="col-12 col-md-9  text-md-center">
+                  <p class="fs-6  " style="color: rgb(71, 68, 68); font-weight: 600;">Our packages are built based on the modules that are most useful for different restaurant types. The more modules you use, the more diner data BentoCore can collect for a fuller view of what your diners and business both need for better hospitality. (We also offer bigger savings when you purchase more modules, so that’s a plus.)</p>
+              </div>
+          </div>
+      </div>
+
+
+      <!-- section  5  -->
+    <div class="container-fluid pt-5" style="background-color: rgb(255, 248, 238);" >
+      <div class="row mt-5" style="border-top: 1px solid rgb(133, 128, 128);">
+        <div class="col-6 d-flex justify-content-end" style="background-color: rgb(255, 248, 238);">
+         
+         <img src="image/table.webp" alt="" class="image-fluid  pt-1 pe-3 d-none d-md-inline"  ><p class="fw-bolder fs-4 pt-3 pe-5 ">Table Services</p>
+        </div>
+        <div class="col-6 d-flex" style="background-color: white;">
+          
+      <img src="image/counter.png" alt="" class="image-fluid ps-3 pt-1 d-none d-md-inline"><p class="fw-bolder fs-4 pt-3 ps-3">Counter Services</p>
+        </div>
+      </div>
+    </div>
+     
+
+    <!-- section 6  -->
+    <div class="container-fluid mt-5">
+      <div class="row d-flex mt-5 justify-content-center">
+        <div class="col-3 ">
+          <p class="fs-4 " style="font-weight: 600;">Foundation </p>
+          <div class="d-flex ">
+            <a href=""><button class="btn mt-3  justify-content-center" type="submit">Start Now</button></a></div>
+           <p style="font-size: 14px;font-weight: 600 ; " class="pt-5">The fundamental tools it takes for counter service restaurants to attract diners, deliver hospitality, and make money.</p>
+            
+        </div>
+        <div class="col-3">
+          <p class="fs-4 " style="font-weight: 600;">Signature</p>
+          <div class="d-flex">
+            <a href=""><button class="btn mt-3  justify-content-center" type="submit">Get Started</button></a></div>
+            <p style="font-size: 14px; font-weight: 600 ;" class=" pt-5 ">Add more ways to make money and create better hospitality experiences across all diner touchpoints.</p>
+            
+        </div>
+      </div>
+    </div>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

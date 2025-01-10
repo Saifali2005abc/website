@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi Location Resturants</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+<style>
+    .x{
+            background-color: rgb(255, 248, 238);
+            width: 100%;
+        }
+        body{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+            font-family: "Plus Jakarta Sans", sans-serif;
+        }
+        .logo{
+            text-decoration: none;
+            color: black;
+            font-size: 25px;
+       }
+        .x1{
+            border: none;
+            background-color: transparent;
+            font-weight: 600;
+        }
+        .x2{
+            text-decoration: none;
+            color: black;
+            font-weight: 600;
+        }
+        .x2:hover{
+            border-bottom: 2px;
+            color: black;
+        }
+        .under1{
+          cursor: pointer;
+          position: relative;
+        }
+        .under1::after{
+          content: '';
+          position: absolute;
+          width: 100%;
+          height: 0.175rem;
+          background:#f15541;
+          left: 0;
+          bottom: 0;
+          transform: scale(0,1);
+          transition: transform 0.3s ease;
+        }
+        .under1:hover::after{
+          transform: scale(1,1);
+        }
+        .btn-get{
+            background-color:#f15541;
+            border: none;
+            border-radius: 50px;
+            padding: 7px 10px 7px 10px;
+            color: white;
+            font-weight: 500;
+        }
+        .btn-get:hover{
+          color: #f15541 ;
+          background-color: rgb(255, 248, 238);
+          transition-duration: 0.2s;
+        }
+        .btn{
+            background-color:rgb(46 , 169 ,136);
+            border: none;
+            border-radius: 50px;
+            padding: 7px 10px 7px 10px;
+            color: white;
+            font-weight: 500;
+        }
+        .btn:hover{
+          color: rgb(46 , 169 ,136) ;
+          background-color: rgb(255, 248, 238);
+          transition-duration: 0.2s;
+        }
+        .img1{
+            background-size: cover;
+            overflow: hidden;
+            width: 80%;
+            border-top-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+        }
+        .img1:hover{
+            opacity: 0.8;
+        }
+        .sec3-img{
+            border-radius: 14px;
+            transition: transform 2s;
+          transition: 0.9 ease-in;
+          cursor: pointer;
+        }
+        .sec3-img:hover{
+          transform: scale(1.2);
+          transition-duration: 2s;
+          border-radius: 14px;
+        }
+        .under2{
+          cursor: pointer;
+          position: relative;
+        }
+        .under2::after{
+          content: '';
+          position: absolute;
+          width: 79%;
+          height: 0.175rem;
+          background:#f15541;
+          left: 0;
+          bottom: 0;
+          transform: scale(0,1);
+          transition: transform 0.3s ease-in-out;
+        }
+        .under2:hover::after{
+          transform: scale(1,1);
+        }
+        .btn-get1{
+            color:#f15541;
+            border: none;
+            background-color: transparent;
+            font-weight: 600;
+            font-size: 20px;
+        }
+        .btn-get1:hover{
+          background-color: #f15541 ;
+          color: rgb(255, 248, 238);
+          transition-duration: 0.2s;
+        }
+        .btn2{
+            background-color: black;
+            color: white;
+            border-radius: 30px;
+            border: none;
+            padding: 10px 13px 10px 13px;
+        }
+        .btn2:hover{
+            background-color: rgb(32, 31, 31);
+        }
+        .under{
+          cursor: pointer;
+          position: relative;
+        }
+        .under::after{
+          content: '';
+          position: absolute;
+          width: 50%;
+          height: 0.0175rem;
+          background: rgb(196, 177, 177);
+          left: 0;
+          bottom: 0;
+          transform: scale(0,1);
+          transition: transform 0.3s ease;
+        }
+        .under:hover::after{
+          transform: scale(1,1);
+        }
+        .x3{
+          overflow: hidden;
+        }
+        .bimg{
+          background-image: url(image/4bgimg.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-attachment: fixed;
+        }
+        .btn-1{
+          background-color: rgb(49, 47, 47);
+          color: white;
+          border: none;
+          border-radius: 30px;
+          padding: 10px;
+          font-weight: 600;
+        }
+        .btn-1:hover{
+          background-color: black;
+        }
+        .btns{
+            text-decoration: none;
+            outline: none;
+            padding: 10px;
+            color: rgb(88, 81, 81);
+        background-color: rgb(241, 238, 234);
+         border-radius: 30px; 
+         font-size: 14px;
+         font-weight: 700;
+          border: none;
+        }
+        .btns:hover{
+          background-color: black;
+          color: white;
+        } 
+</style>
+</head>
+<body>
+    <div class="container-fluid x">
+        <nav class="navbar navbar-expand-lg navbar-light navigation" style=" background-color: rgb(255, 248, 238);">
+            <div class="container-fluid">
+              <a class="navbar-brand logo ms-2" href="index.html"><img src="image/logo.svg" alt="" class="w-75"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-lg-1 mb-2 mb-lg-0 ">
+                  <li class="nav-item ms-lg-1">
+                    <a class="nav-link active x2 under1" aria-current="page" href="whybento.html">Why Bento</b></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active ms-lg-3 x2 under1" aria-current="page" href="pricing.html">Pricing</b></a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link active dropdown-toggle ms-lg-3 me-lg-3 x2 " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Resturant type
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="resturant_typre.html">Multi_location Resturant</a></li>
+                      <li><a class="dropdown-item" href="bars.html">Bars</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Private Chefs</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                
+                <a href="phone.html" ><button class="x1 ms-lg-5 ms-0 under1">+92 327 2000 339</button></a>
+                <a href="login.html" ><button class="x1 ms-lg-3 ms-0 under1">Sign In</button></a>
+                <a href=""><button class="btn ms-lg-3 ms-0  " type="submit">Get Started</button></a>
+                
+              </div>
+            </div>
+          </nav>
+        </div>
+
+        <!-- section 2  -->
+
+        <div class="container-fluid sec-2 pt-4 "  style=" background-color: rgb(255, 248, 238);">
+            <div class="row">
+                <div class="col-12 col-lg-5 pt-lg-5 mt-md-5 ">
+                    <div class="row d-flex">
+                        <div class="col-4"> <img src="image/bar_img.webp" alt="" class="image-fluid w-75 ms-2"></div>
+                        <div class="col-8"><p style="color: black; font-weight: bolder; line-height: 46px;" class="fs-1 mt-5  pe-5 pb-0"><b>Bars</b></p></div>
+                   
+                    
+                    </div>
+                    <p style="letter-spacing: 0.5px; font-weight: 500; font-size: 15px;" class=" ps-3 pe-lg-5 pt-3 pb-0">Keep your regulars coming back with an online presence they can rely on for the latest information.</p>
+                    <a href=""><button class=" ms-lg-3 mt-3 ms-3 btn-get" type="submit">Get Started</button></a>
+                </div>
+                <div class="col-12 col-lg-7 d-flex justify-content-center  pt-5 pb-4" style="background-image: url(image/1.png); background-size: cover;">
+                    <img src="image/4image1.webp    " alt="Not found image" class="mb-2 ps-3 ms-5 ms-md-3 ms-lg-2  w-50 img1 image-fluid">
+                </div>
+            </div>
+          </div>
+
+
+          <!-- section 3  -->
+          <div class="container mt-5 mt-lg-5 pt-md-3 pt-lg-5 ">
+            <div class="row d-flex justify-content-center ">
+                <div class="col-12 col-md-9 text-center">
+                    <p class="fw-bold fs-1 text-dark">Taps rotate. Bands cancel. Closures happen.</p>
+                    <p class="fs-4" style="color: rgb(164, 157, 157);"> But if a guest arrives with misinformed expectations, they may not come back. That’s why BentoBox makes it easy for bar operators to update their online presence on the spot for always-on accuracy.</p>
+                </div>
+            </div>
+          </div>
+
+
+          <!-- section 4  -->
+
+          <div class="container-fluid mt-5 pt-5">
+            <div class="row d-flex justify-content-around">
+                <div class="col-12 col-md-5 col-lg-3 d-none d-lg-inline">
+                    <div class="card" style="border: none; overflow: hidden;">
+                      <img src="image/4image2.webp" alt="Not Found" class=" w-100 sec3-img" style="height: 210px;" >
+                      <div class="card-body">
+                        <p class="card-title fs-4 fw-bold mt-4 under2" style="color: #f15541;">Customized Websites</p>
+                        <p class="card-title fw-bold " style="color: rgb(109 ,102,102); ">Increase brand awareness with an expert-designed online presence, and update details like cocktail menus, hours, seasonal specials and more in seconds from any smart device.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-5 col-lg-3"  >
+                    <div class="card" style="border: none; overflow: hidden;">
+                      <img src="image/4img3.webp" alt="Not Found" class="img-fluid sec3-img  w-100" >
+                      <div class="card-body">
+                        <p class=" fs-4 card-title fw-bold mt-4 under2" style="color: #f15541;">Dine-in order & pay</p>
+                        <p class="card-title fw-bold" style="color: rgb(109 ,102,102); ">AFree up the line at the bar by allowing guests to order and pay directly from their devices.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-5 col-lg-3">
+                    <div class="card" style="border: none; overflow: hidden;">
+                      <img src="image/4img4.webp" alt="Not Found" class="img-fluid sec3-img w-100 ">
+                      <div class="card-body ">
+                        <p class="fs-4 card-title fw-bold h5 mt-4 under2" style="color: #f15541;">Event Management</p>
+                        <p class="card-title fw-bold" style="color: rgb(109, 102, 102); ">Promote and showcase your entire event calendar and sell tickets through your website directly.</p>
+                      </div>
+                    </div>
+                  </div>
+      
+            </div>
+          </div>
+
+
+
+          <!--  section 5  -->
+
+          <div class="container-fluid mt-5 pt-5">
+            <div class="row d-flex justify-content-around">
+                <div class="col-12 col-md-5 col-lg-3 d-none d-lg-inline">
+                    <div class="card" style="border: none; overflow: hidden;">
+                      <img src="image/4img5.webp" alt="Not Found" class=" w-100 sec3-img" style="height: 210px;" >
+                      <div class="card-body">
+                        <p class="card-title fs-4 fw-bold mt-4 under2" style="color: #f15541;">Private Events</p>
+                        <p class="card-title fw-bold " style="color: rgb(109 ,102,102); ">Take inquiries and manage event logistics through one streamlined dashboard.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-5 col-lg-3 ">
+                    <div class="card" style="border: none; overflow: hidden;">
+                      <img src="image/4img6.webp" alt="Not Found" class="img-fluid sec3-img  w-100" >
+                      <div class="card-body">
+                        <p class=" fs-4 card-title fw-bold mt-4 under2" style="color: #f15541;">Built In SEO</p>
+                        <p class="card-title fw-bold" style="color: rgb(109 ,102,102); ">Drive traffic and reach more diners with higher search rankings.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-5 col-lg-3">
+                    <div class="card" style="border: none; overflow: hidden;">
+                      <img src="image/4img7.webp" alt="Not Found" class="img-fluid sec3-img w-100 ">
+                      <div class="card-body ">
+                        <p class="fs-4 card-title fw-bold h5 mt-4 under2" style="color: #f15541;">Digital storefront</p>
+                        <p class="card-title fw-bold" style="color: rgb(109, 102, 102); ">Add more revenue streams with direct merchandise and gift card sales – and keep all the profits. </p>
+                      </div>
+                    </div>
+                  </div>
+      
+            </div>
+          </div>
+
+
+          <!-- section 5  -->
+
+          <div class="container-fluid mt-5 bimg" >
+            <div class="row mt-md-5 d-flex justify-content-center"  >
+              <div class="col-9 mt-5">
+                <p class="fs-3 text-light fw-bold mt-5 ">
+                   " As a brand conscious hospitality company, we found that BentoBox gave us more of what we needed online both aesthetically and functionally."
+                </p>
+              </div>
+            </div>
+      
+            <div class="row justify-content-center mt-5">
+              <div class="col-3"><img src="image/4img8.webp" alt="" class="w-75 image-fluid"></div>
+              <div class="col-5 col-md-2"><p style="font-size: 17px;" class="fw-bold text-light mt-1 mt-md-3">Bettina Stern
+
+                Founder | Chaia Tacos</p> </div>
+              <div class="col-6 col-lg-3  text-center mt-4"><a href=""><button class="btn-1">Visit Site</button></a>
+              </div>
+            </div>
+      
+      
+            <div class="row mt-5  justify-content-center">
+              <div class="col-auto"><a href="#"><button class="p-2 mt-1 mb-5 btns">Resturant Websites</button></a></div>
+                           
+            </div>
+          </div>
+          
+
+          <!-- section 6  -->
+
+
+
+         
+
+          <div class="container mt-5 " style="background-color: #f15541; border-radius: 40px;">
+            <div class="row mt-5">
+             <div class="col-12 col-lg-9">
+                   <div class="row">
+                    <div class="col-12">
+                      <p class="fs-2 ps-3 text-light pt-4"><b>Interested in learning more about BentoBox?</b></p>
+                    </div>
+                    <div class="col-12">
+                      <p class="fs-6 ps-3 text-light pb-2" style="font-weight: 500;">See how the Marketing & Commerce Platform can help your restaurant do more.</p>
+                    </div>
+                   </div>
+             </div>
+             <div class="col-12 col-lg-3 d-flex justify-content-center  align-self-center">
+               <a href=""><button class="btn2 x4 mb-4 mb-lg-0">Book a Demo</button></a>
+             </div>
+            </div>
+           </div>
+
+           <!-- footer  -->
+
+           <div class="container-fluid mt-5 pt-5 pb-5" style="background-color: rgb(255, 248, 238);">
+            <div class="row">
+              <div class="col-12 col-md-4 col-lg-3" style="border-right:  1px solid rgb(219, 203, 203); border-bottom: 1px solid rgb(213, 218, 218);">
+              <p class="fs-4 fw-bold  ms-4 ps-2 mt-5 " >Bentbox</p>
+              <ul style="list-style: none; " class="fs-6 ">
+               <a href="" style="text-decoration: none; color: rgb(105, 100, 100); font-weight: 600; line-height: 35px;" class="under"> <li>Life at Bentbox</li></a>
+               <a href="" style="text-decoration: none; color: rgb(164, 157, 157); font-weight: 600; line-height: 35px;" class="under"> <li>Carrers</li></a>
+               <a href="" style="text-decoration: none; color: rgb(105, 100, 100); font-weight: 600; line-height: 35px;" class="under"> <li>Customer Storeis</li></a>
+               <a href="" style="text-decoration: none; color: rgb(105, 100, 100); font-weight: 600; line-height: 35px;" class="under"> <li>Platform Status</li></a>
+               <a href="" style="text-decoration: none; color: rgb(105, 100, 100); font-weight: 600; line-height: 35px;" class="under"> <li>DEI</li></a>
+              </ul>
+              </div>
+              <div class="col-12 col-md-4 col-lg-3" style="border-right:  1px solid  rgb(219, 203, 203);border-bottom: 1px solid rgb(213 , 218 ,218);">
+                <p class="fs-4 fw-bold ms-4 ps-2 mt-5 " >Contact</p>
+                <ul style="list-style: none; " class="fs-6 ">
+                  <a href="" style="text-decoration: none; color: rgb(105, 100, 100); font-weight: 600; line-height: 35px;" class="under"> <li>Sign Up</li></a>
+                  <a href="" style="text-decoration: none; color: rgb(105, 100, 100); font-weight: 600; line-height: 35px;" class="under"> <li>Call  Now</li></a>
+                  <a href="" style="text-decoration: none; color: rgb(105, 100, 100); font-weight: 600; line-height: 35px;" class="under"> <li>Watch the Demo</li></a>
+                  <a href="" style="text-decoration: none; color: rgb(105, 100, 100); font-weight: 600; line-height: 35px;" class="under"> <li>Refer a Resturant</li></a>
+                  <a href="" style="text-decoration: none; color: rgb(105, 100, 100); font-weight: 600; line-height: 35px;" class="under"> <li>Become a Partner</li></a>
+                  <a href="" style="text-decoration: none; color: rgb(105, 100, 100); font-weight: 600; line-height: 35px;" class="under"> <li>Referals Terms</li></a>
+                 </ul>
+              </div>
+              <div class="col-12 col-md-4 col-lg-3" style="border-right:  1px solid  rgb(219, 203, 203); border-bottom: 1px solid rgb(231, 218, 218);">
+                <p class="fs-4 fw-bold ms-4 ps-2 mt-5  " >Support</p>
+                <ul style="list-style: none; " class="fs-6 ">
+                  <a href="" style="text-decoration: none; color: rgb(105, 100, 100); font-weight: 600; line-height: 35px;" class="under"> <li>FAQ</li></a>
+                  <a href="" style="text-decoration: none; color: rgb(105, 100, 100); font-weight: 600; line-height: 35px;" class="under"> <li>Contact Support</li></a>
+                  <a href="" style="text-decoration: none; color: rgb(105, 100, 100); font-weight: 600; line-height: 35px;" class="under"> <li>Help Center</li></a>
+                  <a href="" style="text-decoration: none; color: rgb(105, 100, 100); font-weight: 600; line-height: 35px;" class="under"> <li>Privacy Policy</li></a>
+                  <a href="" style="text-decoration: none; color: rgb(105, 100, 100); font-weight: 600; line-height: 35px;" class="under"> <li>Term of Services</li></a>
+                 </ul>
+              </div>
+              <div class="col-12 col-md-4 col-lg-2">
+                <p class="fs-4 fw-bold ms-4  mt-5  " >Connect</p>
+                <div class="row">
+                  <div class="col-12">
+                    <a href="" class="fi fs-5 text-dark p-0"><i class="fa-brands fa-facebook-f ps-4 x3"></i></a>
+                    <a href="" class="fi fs-5 text-dark p-0"><i class="fa-brands fa-instagram ps-4 x3"></i></a>
+                    <a href="" class="fi fs-5 text-dark p-0"><i class="fa-brands fa-twitter ps-4 x3"></i></a>
+                    <a href="" class="fi fs-5 text-dark p-0"><i class="fa-brands fa-linkedin ps-4 x3"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+           </div>
+      
+
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+</html>
